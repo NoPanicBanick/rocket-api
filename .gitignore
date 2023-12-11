@@ -9,6 +9,8 @@
 *.user
 *.userosscache
 *.sln.docstates
+src/Rocket.API/appsettings.json
+src/Rocket.API/appsettings.Development.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
