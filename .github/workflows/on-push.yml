@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Post Merge Steps
 on:
   push:
     branches: [ "main" ]
