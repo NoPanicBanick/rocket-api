@@ -7,7 +7,11 @@ using Rocket.API.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddEnvironmentVariables();
-builder.Configuration.AddJsonFile("appsettings.json", true);
+if (builder.Environment.IsDevelopment())
+{
+    builder.Configuration.AddJsonFile("appsettings.Development.json", true);
+}
+
 
 var dbConnection = new MySqlConnectionStringBuilder
 {
