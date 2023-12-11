@@ -28,7 +28,6 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
-
 app.MapGet("/", () => "Welcome to the Rocket.API");
 
 #region Player
