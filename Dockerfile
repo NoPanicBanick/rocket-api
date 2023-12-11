@@ -9,4 +9,5 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build-env /app/out .
 
+USER $APP_UID
 ENTRYPOINT ["dotnet", "Rocket.API.dll"]
